@@ -21,8 +21,8 @@ comments: true
 
 ### 4. mirror 사이트 국내사이트로 잡기
 
-  `# yum install -y bzip2`
-  `# bzip2 /etc/yum.repos.d/CentOS-*.repo`
+  `# yum install -y bzip2` <br>
+  `# bzip2 /etc/yum.repos.d/CentOS-*.repo` <br>
   `# echo '[base]`
 
   {% highlight html %}
@@ -37,7 +37,7 @@ comments: true
   name=codentOS-$releasever - Extras
   baseurl=http://ftp.daum.net/centos/$releasever/extras/$basearch/
   gpgcheck=0' > /etc/yum.repos.d/Daum.repo
-  {% endhighlight %}
+  {% endhighlight html %}
 
 ### 4. yum 업데이트
 
