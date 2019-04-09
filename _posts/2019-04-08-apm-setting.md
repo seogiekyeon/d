@@ -25,7 +25,7 @@ comments: true
   `# bzip2 /etc/yum.repos.d/CentOS-*.repo`
   `# echo '[base]`
 
-  {% highlight %}
+  {% highlight html %}
   name=CentOS-$releasever - Base
   baseurl=http://ftp.daum.net/centos/$releasever/os/$basearch/
   gpgcheck=0
@@ -141,7 +141,7 @@ comments: true
     `# ln -s /usr/local/apache/bin/apachectl /etc/init.d/httpd`
     `# vi /etc/init.d/httpd`
 
-    {% highlight %}
+    {% highlight html %}
     #!/bin/sh
     #
     # Apache This starts and stops Apache.
@@ -170,7 +170,7 @@ comments: true
     `# cd mysql-5.6.14`
     `# cmake \`
 
-    {% highlight %}
+    {% highlight html %}
     -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
     -DMYSQL_DATADIR=/var/mysql/data \
     -DMYSQL_UNIX_ADDR=/var/mysql/mysql.sock \
@@ -214,7 +214,7 @@ comments: true
     `# mv ./my.cnf /etc/my.cnf`
     `# vi /etc/my.cnf`
 
-    {% highlight %}
+    {% highlight html %}
     sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
     innodb_buffer_pool_size = 16M
     innodb_additional_mem_pool_size = 2M
@@ -299,7 +299,7 @@ readline-devel libedit-devel libtidy libtidy-devel libxslt libxslt-devel expat* 
     `# cd php-5.6.4`
     `#  sudo ./configure --prefix=/usr/local/php \`
 
-    {% highlight %}
+    {% highlight html %}
     --with-apxs2=/usr/local/apache/bin/apxs \
     --enable-mod-charset \
     --with-config-file-path=/usr/local/php/lib \
