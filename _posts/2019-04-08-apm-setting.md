@@ -41,11 +41,11 @@ comments: true
 
 ### 4. yum 업데이트
 
-    `# yum update yum`
+    # yum update yum
 
 ### 5. ./configure를 위한 패키지 설치
 
-    `# yum -y install gcc gcc-c++`
+    # yum -y install gcc gcc-c++
 **Watch Out!** 컴파일시 항상 로그를 체크하여 에러가 발생했는지 확인해주세요.
 {: .notice}
 
@@ -53,8 +53,8 @@ comments: true
 
 ### 1. 임의의 디렉토리 생성후 이동
 
-    `# mkdir /root/downloads`
-    `# cd /root/downloads`
+    # mkdir /root/downloads
+    # cd /root/downloads
 
 ### 2. wget 패키지 설치
 
