@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CentOS 7.x APM Install"
-date: 2012-05-22
+date: 2012.05.22
 excerpt: "CentOS 7.x APM Install"
 tags: [AWS, SERVER]
 comments: true
@@ -357,7 +357,7 @@ readline-devel libedit-devel libtidy libtidy-devel libxslt libxslt-devel expat* 
     `# sudo ln -s /usr/local/php/bin/php-config /usr/local/bin/php-config`
     `# sudo ln -s /usr/local/php/bin/phpize /usr/local/bin/phpize`
 
-## ETC 
+## ETC
 
 ### 1. 원하는 시간대 찾기
 
