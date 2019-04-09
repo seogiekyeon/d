@@ -120,15 +120,13 @@ comments: true
 
     # vi /usr/local/apache/conf/httpd.conf
 
--------------------------
     User daemon
     Group daemon
 
-    을 찾아 아래처럼 변경해주세요.
+    을 찾아 아래처럼 변경
 
     User centos
     Group centos
--------------------------
 
 ### 6. 아파치 구동 후 확인
 
@@ -140,7 +138,7 @@ comments: true
 
     # ln -s /usr/local/apache/bin/apachectl /etc/init.d/httpd
     # vi /etc/init.d/httpd
--------------------------
+
     #!/bin/sh
     #
     # Apache This starts and stops Apache.
@@ -148,7 +146,7 @@ comments: true
     # chkconfig: 35 20 80
     # description: Apache Web Service
     #
--------------------------
+
     # service httpd start
 
 ## Mysql
