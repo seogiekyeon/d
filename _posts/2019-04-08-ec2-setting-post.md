@@ -4,7 +4,7 @@ title: "Amazon Web Service EC2 Instance Setting"
 date: 2018.05.22
 excerpt: "Amazon Web Service EC2 Instance Setting"
 tags: [AWS, SERVER]
-feature: https://s3-us-west-2.amazonaws.com/paubox-blog/blog/wp-content/uploads/2017/03/22113109/AWS-logo.png
+feature: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
 comments: true
 ---
 
@@ -31,3 +31,67 @@ EC2 페이지 진입 후, 페이지 중간의 Launch Instance(인스턴스 시�
 페이지 진입 후 좌측 메뉴트리의 AWS Marketplace를 선택 후 "CentOS" 검색
 
 현재 CentOS 버전에 맞게 Instance OS 설정
+
+**CentOS 버전 확인 명령어** `cat /etc/redhat-release` 페이지 진입 초기에 등장하는 Amazon Linux는 CentOS를 기반으로 Amazon사에서 만든 Linux이며 대부분의 CentOS 명령어를 그대로 사용
+{: .notice}
+
+## 6. Instance 설정
+
+* 6-1. Instance의 사양 설정
+
+이 사양은 Instance를 생성 후 사용중에도 변경 가능
+
+보안설정을 마친 후 Review and Launch 버튼을 클릭
+
+**Watch Out!** 해당 사양으로 1초라도 사용 시 바로 1시간의 요금이 부과됩니다.
+{: .notice}
+
+* 6-2. Security Group 설정
+
+Edit Security Group 버튼을 찾아 클릭
+
+Add 버튼을 눌러 원하는 포트를 추가
+
+**Watch Out!** AWS 서버 포트관리는 이 Security Group을 통해 관리하며,  이 또한 인스턴스 생성 후 수시로 변경이 가능합니다.
+{: .notice}
+
+* 6-3. Launch
+
+위 단계 중에서 변경해야 할 부분이 없으면 우측 하단의 Launch 버튼 클릭
+
+* 6-4. Key Pair 생성
+
+해당 인스턴스로 접근할 키페어를 생성
+
+생성된 private key 형식(.pem)을 [PUITTYgen](https://www.puttygen.com/) 을 이용해 public key 형식(.ppk)으로 변환 한 후 [putty](https://www.putty.org/)를 통해 접속을 시도
+
+**Watch Out!** 키페어는 절대 잃어버리지 마십시오.
+{: .notice}
+
+## 7. Elastic IP 설정
+
+* 7-1. Elastic IP 메뉴 진입
+
+EC2 메뉴 초기화면으로 돌아와 좌측 메뉴트리의 elastic IP 메뉴 클릭
+
+해당 메뉴의 Allocate new address 버튼 클릭
+
+* 7-2. Elastic IP 를 사용할 Instance 선택
+
+Instance를 클릭하면 현재 생성된 모든 Instance 목록이 나오며
+
+이 중 고정 IP를 사용할 Instance를 선택 한 뒤 Associate 버튼 클릭
+
+* 7-3. 생성된 Elastic IP
+
+생성 후 목록에 나오는 Elastic IP가 해당 Instance로 접근할 고정 IP 이다.
+
+**Watch Out!** ※ 고정 IP 생성 후 연결된 Instance가 없을 시에는 요금이 부과되니 주의하십시오.
+{: .notice}
+
+## 8. 원격접속
+
+`6-4` 에서 생성한 키파일(.ppk )을 이용해 서버에 접속
+
+AWS 서버는 root 접근을 제한하고 있으며,  초기 username은 CentOS로 설치 시에 "centos", AmazonLinux를 설치 시 "ec2-user" 이다.
+{: .notice}
