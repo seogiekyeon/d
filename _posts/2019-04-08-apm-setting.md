@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CentOS 7.x APM Install"
-date: 2012.05.22
+date: 2018.05.22
 excerpt: "CentOS 7.x APM Install"
 tags: [AWS, SERVER]
 comments: true
