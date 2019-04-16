@@ -37,7 +37,7 @@ EC2 페이지 진입 후, 페이지 중간의 Launch Instance(인스턴스 시�
 
 ## 6. Instance 설정
 
-* 6-1. Instance의 사양 설정
+### 6-1. Instance의 사양 설정
 
 이 사양은 Instance를 생성 후 사용중에도 변경 가능
 
@@ -46,7 +46,7 @@ EC2 페이지 진입 후, 페이지 중간의 Launch Instance(인스턴스 시�
 **Watch Out!** 해당 사양으로 1초라도 사용 시 바로 1시간의 요금이 부과됩니다.
 {: .notice}
 
-* 6-2. Security Group 설정
+### 6-2. Security Group 설정
 
 Edit Security Group 버튼을 찾아 클릭
 
@@ -55,11 +55,11 @@ Add 버튼을 눌러 원하는 포트를 추가
 **Watch Out!** AWS 서버 포트관리는 이 Security Group을 통해 관리하며,  이 또한 인스턴스 생성 후 수시로 변경이 가능합니다.
 {: .notice}
 
-* 6-3. Launch
+### 6-3. Launch
 
 위 단계 중에서 변경해야 할 부분이 없으면 우측 하단의 Launch 버튼 클릭
 
-* 6-4. Key Pair 생성
+### 6-4. Key Pair 생성
 
 해당 인스턴스로 접근할 키페어를 생성
 
@@ -70,19 +70,19 @@ Add 버튼을 눌러 원하는 포트를 추가
 
 ## 7. Elastic IP 설정
 
-* 7-1. Elastic IP 메뉴 진입
+### 7-1. Elastic IP 메뉴 진입
 
 EC2 메뉴 초기화면으로 돌아와 좌측 메뉴트리의 elastic IP 메뉴 클릭
 
 해당 메뉴의 Allocate new address 버튼 클릭
 
-* 7-2. Elastic IP 를 사용할 Instance 선택
+### 7-2. Elastic IP 를 사용할 Instance 선택
 
 Instance를 클릭하면 현재 생성된 모든 Instance 목록이 나오며
 
 이 중 고정 IP를 사용할 Instance를 선택 한 뒤 Associate 버튼 클릭
 
-* 7-3. 생성된 Elastic IP
+### 7-3. 생성된 Elastic IP
 
 생성 후 목록에 나오는 Elastic IP가 해당 Instance로 접근할 고정 IP 이다.
 
