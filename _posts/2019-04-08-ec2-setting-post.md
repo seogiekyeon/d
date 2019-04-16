@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Amazon Web Service EC2 Instance Setting"
-date: 2017-11-30
+date: 2018.05.22
 excerpt: "Amazon Web Service EC2 Instance Setting"
 tags: [AWS, SERVER]
 feature: {{ site.url }}/assets/img/aws_logo.jpg
@@ -62,7 +62,7 @@ Add 버튼을 눌러 원하는 포트를 추가
 * 6-4. Key Pair 생성
 
 해당 인스턴스로 접근할 키페어를 생성
- 
+
 생성된 private key 형식(.pem)을 [PUITTYgen](https://www.puttygen.com/) 을 이용해 public key 형식(.ppk)으로 변환 한 후 [putty](https://www.putty.org/)를 통해 접속을 시도
 
 **Watch Out!** 키페어는 절대 잃어버리지 마십시오.
