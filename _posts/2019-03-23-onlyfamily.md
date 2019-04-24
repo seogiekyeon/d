@@ -14,7 +14,7 @@ comments: true
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/zm8S50bhnDE" frameborder="0"> </iframe>
-<br>
+
 <center>우리 가족을 위한 바른 습관 <b>키즈해빛</b></center>
 
 ## About us
@@ -34,4 +34,4 @@ comments: true
   https://lh3.googleusercontent.com/-Rc80zu_waDj2UZrARMpTRBVmQuU8_H_D5XoTPVT2YIItpN3gBp0ILaK5zbOiQKsbA
   https://lh3.googleusercontent.com/X6bFFiS-3dFdHgOTzJtCwPLFBb_3ibctq53YgAbvicIH9kcsKSrz1_5O1IZil2ykLqE
 {% endcapture %}
-{% include gallery images=images caption="Watchmafia Preview" cols=3 %}
+{% include gallery images=images caption="키즈해빛 Preview" cols=3 %}
